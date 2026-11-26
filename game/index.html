@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Skyline Courier — fly a little prop plane through glowing rings over a seeded valley and land on the far runway. Keyboard and mouse, no install, no network.">
+<title>Skyline Courier — a little prop plane, three delivery routes</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #0a1929; }
+  #game { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
+  /* Read aloud, never shown: the status line screen readers announce. */
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" aria-label="Skyline Courier: fly a little prop plane through the rings and land on the far runway"></canvas>
+<p id="status" role="status" aria-live="polite"></p>
+<noscript><p style="color:#fff;font:16px Arial,sans-serif;padding:24px">Skyline Courier needs JavaScript to fly. Please enable it and reload.</p></noscript>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
